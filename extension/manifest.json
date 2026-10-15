@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Weekly Labor Cards",
+  "version": "1.1.2",
+  "description": "Download Thursday through Wednesday HotSchedules labor cards using your signed-in session.",
+  "permissions": [
+    "debugger",
+    "downloads",
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://app.hotschedules.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "worker.js"
+  }
+}
